@@ -11,18 +11,18 @@ class ListItem extends Component {
 
     }
     handleChange(e) {
-        console.log("in handleChange");
+
         this.props.onCheckBoxChange(e);
     }
 
     render() {
-        console.log("listItem render");
+
         return (
             <li >
                 <input name={this.props.name} type='checkbox' onChange={this.handleChange} value={this.props.ckbval} />
 
 
-                {this.props.taskDes} {this.props.time} you are here
+                {this.props.taskDes}
             </li>
         );
 
